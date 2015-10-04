@@ -8,12 +8,12 @@ public class Stature {
 		int a = in.nextInt();
 		System.out.println("enter your weight");
 		int b = in.nextInt();
-			 if ((a-100)<b)
-		  {
-		      System.out.println("you need to lose weight");
-		  }else{
-              System.out.println("you need to put on weight"); }
-			in.close();
+		if ((a - 100) < b) {
+			System.out.println("you need to lose weight");
+		} else {
+			System.out.println("you need to put on weight");
+		}
+		in.close();
 	}
 
 }

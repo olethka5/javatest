@@ -8,10 +8,12 @@ public class Segment {
 		int a = in.nextInt();
 		System.out.println("enter the number b");
 		int b = in.nextInt();
-			if (b == 0){System.out.println("error" );}
-		else{
-			float c = a/((float)b);
-			System.out.println("result is" + " " +c); }   
+		if (b == 0) {
+			System.out.println("error");
+		} else {
+			float c = a / ((float) b);
+			System.out.println("result is" + " " + c);
+		}
 		in.close();
 	}
 
