@@ -17,17 +17,21 @@ public class Ruble {
 		}
 		if (a >= 11 && a <= 14) {
 			System.out.println(a + "рублей");
-		}
-		if ((a >= 2 && a <= 4) || (b >= 2 && b <= 4)) {
-			System.out.println(a + "рубля");
-		}
 
-		if ((a == 1) || (b == 1)) {
-			System.out.println(a + "рубль");
 		} else {
-			System.out.println(a + "рублей");
-		}
+			if ((a >= 2 && a <= 4) || (b >= 2 && b <= 4)) {
+				System.out.println(a + "рубля");
+			} else {
 
-		in.close();
+				if ((a == 1) || (b == 1)) {
+					System.out.println(a + "рубль");
+				} else {
+					System.out.println(a + "рублей");
+				}
+
+				in.close();
+			}
+		}
 	}
 }
+	
