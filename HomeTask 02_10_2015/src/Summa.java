@@ -4,7 +4,7 @@ public class Summa {
 
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
-		System.out.println("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ РѕС‚ 1 РґРѕ 100");
+		System.out.println("Введите число от 1 до 100");
 		int n = in.nextInt();
 
 		int b;

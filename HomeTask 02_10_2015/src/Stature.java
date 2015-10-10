@@ -4,7 +4,7 @@ public class Stature {
 
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
-		System.out.println("eenter your height");
+		System.out.println("enter your height");
 		int a = in.nextInt();
 		System.out.println("enter your weight");
 		int b = in.nextInt();
