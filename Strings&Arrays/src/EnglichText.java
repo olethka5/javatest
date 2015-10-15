@@ -11,11 +11,7 @@ public class EnglichText {
 		System.out.println("Введите текст:");
 		String a = in.nextLine();
 		String s = a.replaceAll(" ", "").toLowerCase();
-		char[] chr = s.toCharArray();
-		System.out.println(s);
-		for (char ch : chr)
-			if (Character.isLetter(ch))
-				s += ch; // что то здесь не так
+		s = s.replaceAll("[^a-z]", "");
 		System.out.println(s);
 		String codeS = "";
 		String formatS = "";
