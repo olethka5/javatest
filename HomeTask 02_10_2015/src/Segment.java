@@ -1,3 +1,5 @@
+
+//3. Написать программу, которая вычисляет частное двух чисел.
 import java.util.Scanner;
 
 public class Segment {

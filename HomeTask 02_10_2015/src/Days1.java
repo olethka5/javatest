@@ -3,38 +3,48 @@
 введены неверные данные.*/
 import java.util.Scanner;
 
-public class Days {
+public class Days1 {
 
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		System.out.println("Введите номер дня недели");
 		int a = in.nextInt();
-		if (a == 0 || a > 7) {
-			System.out.println("Неделя - это только 7дней");
-		}
-		if (a == 1) {
+		switch (a) {
+		case 1:
+
 			System.out.println("Понедельник");
-		}
-		if (a == 2) {
+			break;
+
+		case 2:
+
 			System.out.println("Вторник");
-		}
-		if (a == 3) {
+			break;
+
+		case 3:
+
 			System.out.println("Среда");
-		}
-		if (a == 4) {
+			break;
+		case 4:
+
 			System.out.println("Четверг");
-		}
-		if (a == 5) {
+			break;
+		case 5:
+
 			System.out.println("Пятница");
-		}
-		if (a == 6) {
+			break;
+		case 6:
+
 			System.out.println("Суббота");
-		}
-		if (a == 7) {
+			break;
+		case 7:
+
 			System.out.println("Воскресенье");
+			break;
+
+		default:
+
+			System.out.println("Неделя - это всего 7 дней");
 		}
 		in.close();
 	}
-
 }
-
