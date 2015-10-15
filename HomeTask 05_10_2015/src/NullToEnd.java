@@ -12,23 +12,27 @@ public class NullToEnd {
 			}
 
 		
-			  for (int i = mass.length - 1; i >= 0; i--) {
-		            if (mass[i] == 0) {int c=i;
-		            for (;c<10;c++);{
-		    
-		            
-		            mass[i]=mass[c];
-		            mass[c]=0;
-		
+			  for (int i = 0; i<10; i++) {
+				  if (mass[i]==0) continue;
+				    {
+				        int c=i;
+				        while (mass[c]==0) c++;
+				       
+				        mass[i]=mass[c];
+				        mass[c]=0;
+				    }
+		            System.out.printf("%4d", mass[i]);
 		            }
 		    }
+		
 				
 	
 
 			
-			System.out.printf("%4d", mass[i]);
+			
 
 				
 				}
 
-}
+
+	
